@@ -22,13 +22,13 @@
 Клонируем репозиторий себе на компьютер:
 
 ```sh
-git clone https://github.com/maxvgr/new-build
+git clone https://github.com/maxvgr/test
 ```
 
 Переходим в каталог с проектом:
 
 ```sh
-cd new-build
+cd test
 ```
 
 Устанавливаем все зависимости командой:
