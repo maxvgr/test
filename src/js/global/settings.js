@@ -1,0 +1,37 @@
+/* Все объекты конфигураций для скриптов */
+
+// Повторяющиеся стили
+export const StyleClass = {
+  mobile: {
+    open: 'mobile-menu--open',
+  },
+
+  body: {
+    scroll: 'scroll-lock'
+  },
+
+  state: {
+    open: 'is-open',
+    active: 'is-active',
+  }
+};
+
+// Для адаптивности скриптов
+export const breakpoint = {
+  mobile: '(min-width: 480px)',
+};
+
+// Базовые настройки для MicroModal.js
+export const modalParams = {
+  awaitCloseAnimation: true,
+  disableFocus: true,
+  disableScroll: true,
+
+  onShow: modal => {
+    window.currentModal = modal.id;
+  },
+
+  onClose: () => {
+    window.currentModal = undefined;
+  }
+};
