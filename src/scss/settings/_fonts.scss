@@ -5,12 +5,17 @@
 -----------------------------------------------------------------------------
 */
 
-@include font-face("Roboto", "~@assets/fonts/Roboto/Roboto-Light", 300);
-@include font-face("Roboto", "~@assets/fonts/Roboto/Roboto-Regular", 400);
-@include font-face("Roboto", "~@assets/fonts/Roboto/Roboto-Medium", 500);
-@include font-face("Roboto", "~@assets/fonts/Roboto/Roboto-Bold", 700);
+// @include font-face("GolosText", "~@assets/fonts/GolosText/GolosText-Light", 300);
+@include font-face("GolosText", "~@assets/fonts/GolosText/GolosText-Regular", 400);
+@include font-face("GolosText", "~@assets/fonts/GolosText/GolosText-Medium", 500);
+@include font-face("GolosText", "~@assets/fonts/GolosText/GolosText-Bold", 700);
 
-$font-default: "Roboto", sans-serif; // Семейство по умолчанию
+@include font-face("Merriweather", "~@assets/fonts/Merriweather/Merriweather-Light", 300);
+@include font-face("Merriweather", "~@assets/fonts/Merriweather/Merriweather-Regular", 400);
+@include font-face("Merriweather", "~@assets/fonts/Merriweather/Merriweather-Bold", 700);
+
+$font-default: "GolosText", sans-serif; // Семейство по умолчанию
+$font-title: "Merriweather", sans-serif; // Заголовки
 
 body {
   color: $color-text__primary;
