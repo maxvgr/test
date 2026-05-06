@@ -3,16 +3,15 @@
 // -----------------------------------------------------------------------------
 
 #header {
-
-
 }
 
 .header {
-  background-image: url('../assets/images/global/bg.webp');
+  position: relative;
+  background-image: url("../assets/images/global/bg.webp");
 
   &__wrapper {
     min-height: 700px;
-    background-image: url('../assets/images/global/header.webp');
+    background-image: url("../assets/images/global/header.webp");
   }
 
   &__info {
@@ -45,6 +44,38 @@
     padding-top: 40px;
   }
 
+  .running-line {
+    @keyframes running-line {
+      0% {
+        transform: translateX(0);
+      }
 
+      100% {
+        transform: translateX(-100%);
+      }
+    }
 
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 30px;
+    background-color: $palette-red;
+    color: $color-text__white;
+
+    // font-weight: bold;
+
+    font-size: 16px;
+    white-space: nowrap;
+
+    &__content {
+      display: inline-block;
+      padding-left: 100%;
+      animation: running-line 25s linear infinite;
+    }
+  }
 }
