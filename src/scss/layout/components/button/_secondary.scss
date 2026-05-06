@@ -1,0 +1,8 @@
+.button-secondary {
+  border: 2px solid $palette_dark;
+
+  &:hover {
+    background-color: $color-text_dark;
+    color: $color-text__white;
+  }
+}

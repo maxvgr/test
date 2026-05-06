@@ -1,2 +1,9 @@
 .button-primary {
+  background-color: $color-text_dark;
+  color: $color-text__white;
+
+  &:hover {
+    background-color: $palette-yellow;
+    color: $color-text__primary;
+  }
 }
