@@ -8,6 +8,14 @@
   }
 
   &__title {
+    font-size: 36px;
+    font-family: $font-title;
+    text-transform: uppercase;
+
+    span {
+      color: $color-text__red;
+      font-weight: 700;
+    }
 
   }
 }

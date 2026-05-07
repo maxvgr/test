@@ -3,9 +3,19 @@
 // -----------------------------------------------------------------------------
 
 #footer {
-
 }
 
 .footer {
+  position: relative;
+  height: 210px;
+  background-color: $palette-grey;
 
+  &__text {
+    padding-top: 100px;
+  }
+
+  .running-line {
+    top: 0;
+    bottom: auto;
+  }
 }
