@@ -1,0 +1,30 @@
+#cp-home-stages {
+  .section-title {
+    &__wrapper {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      max-width: 800px;
+
+      .section__title {
+        font-size: 54px;
+      }
+    }
+
+    &__link {
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      font-size: 20px;
+      transform: translateY(40%);
+    }
+  }
+
+  .stages {
+    padding-top: 200px;
+
+    &__wrapper {
+      padding-top: 64px;
+    }
+  }
+}

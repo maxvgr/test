@@ -1,10 +1,13 @@
 .link {
+  color: $link-color;
   cursor: pointer;
   transition: $transition-time ease;
 
   @media (hover: hover) {
     &:hover {
-      color: $link-hover-color;
+      // color: $link-hover-color;
+
+      text-decoration: underline;
     }
   }
 

@@ -1,0 +1,68 @@
+#cp-home-seans {
+  .seans {
+    @include mq($until: tablet) {
+      grid-template-columns: 1fr;
+    }
+
+    display: grid;
+    grid-template-columns: 530px 1fr;
+    gap: 46px;
+    padding-top: 36px;
+
+    .section__title {
+      padding-top: 28px;
+    }
+
+    &__list {
+      padding-top: 60px;
+      padding-bottom: 48px;
+      font-size: 20px;
+    }
+
+    &__label {
+      @include mq($until: mobile) {
+        width: 100%;
+        border-right: none;
+      }
+
+      width: 40%;
+      padding: 16px;
+      border-right: 2px solid #d0d0d0;
+    }
+
+    &__value {
+      padding: 16px;
+
+      span {
+        text-decoration: line-through;
+        text-decoration-color: $color-text__red;
+      }
+    }
+
+    &__item {
+      @include mq($until: mobile) {
+        display: block;
+      }
+
+      display: flex;
+
+      &:first-child {
+        .seans__label,
+        .seans__value {
+          padding-top: 0;
+        }
+      }
+
+      &:last-child {
+        .seans__label,
+        .seans__value {
+          padding-bottom: 0;
+        }
+      }
+
+      &:not(:last-child) {
+        border-bottom: 2px solid #d0d0d0;
+      }
+    }
+  }
+}
