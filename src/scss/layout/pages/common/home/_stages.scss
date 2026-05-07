@@ -25,10 +25,23 @@
     counter-reset: stage-counter;
 
     &__wrapper {
+      position: relative;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       padding-top: 64px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        right: -70px;
+        bottom: -25px;
+        width: 401px;
+        height: 235px;
+        background-image: url("../assets/images/sections/stages/plane.webp");
+
+      }
     }
 
     &__item {
