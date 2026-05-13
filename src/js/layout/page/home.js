@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import SmoothScroll from 'smooth-scroll';
 
 document.addEventListener("DOMContentLoaded", function () {
   const breakpoint = 816;
@@ -125,4 +126,10 @@ new Swiper("#cp-home-team .swiper", {
     clickable: true,
     type: 'fraction'
   },
+});
+
+// scroll
+const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 500,
+  speedAsDuration: true,
 });
