@@ -101,10 +101,10 @@ new Swiper("#cp-home-team .swiper", {
   },
 
   breakpoints: {
-    540: {
+    816: {
       slidesPerView: 2,
     },
-    1032: {
+    1045: {
       slidesPerView: 3,
     },
     1400: {

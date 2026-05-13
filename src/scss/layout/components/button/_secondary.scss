@@ -1,4 +1,13 @@
 .button-secondary {
+  @include mq($until: notebook) {
+    width: 113px;
+    height: 35px;
+  }
+  @include mq($until: tablet) {
+    width: 113px;
+    height: 35px;
+  }
+
   width: 113px;
   height: 35px;
   padding: 0;

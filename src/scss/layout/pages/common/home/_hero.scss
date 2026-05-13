@@ -2,12 +2,50 @@
   .hero {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 80px;
 
+    &__image {
+      img {
+        @include mq($until: tablet) {
+          width: 100%;
+          height: auto;
+        }
+
+        height: 250px;
+        max-height: 250px;
+      }
+
+      &--mobile {
+        @include mq($until: notebook) {
+          display: block;
+        }
+
+        display: none;
+      }
+
+      &--desktop {
+        @include mq($until: notebook) {
+          display: none;
+        }
+      }
+    }
+
     .section__title {
+      @include mq($until: notebook) {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        font-size: 28px;
+      }
+
+      flex: 1;
       max-width: 764px;
       font-size: 36px;
+
+      p {
+        display: inline;
+      }
     }
   }
 }

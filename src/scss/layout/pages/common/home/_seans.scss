@@ -1,6 +1,6 @@
 #cp-home-seans {
   .seans {
-    @include mq($until: tablet) {
+    @include mq($until: notebook) {
       grid-template-columns: 1fr;
     }
 
@@ -10,6 +10,11 @@
     padding-top: 36px;
 
     .section__title {
+      @include mq($until: notebook) {
+        padding-top: 0;
+        font-size: 28px;
+      }
+
       padding-top: 28px;
       font-size: 36px;
     }
@@ -23,6 +28,7 @@
     &__label {
       @include mq($until: mobile) {
         width: 100%;
+        padding: 8px;
         border-right: none;
       }
 
@@ -32,6 +38,10 @@
     }
 
     &__value {
+      @include mq($until: mobile) {
+        padding: 8px;
+      }
+
       padding: 16px;
 
       span {
@@ -46,6 +56,17 @@
       }
 
       display: flex;
+
+      &--other {
+        @include mq($until: mobile) {
+          display: flex;
+
+          .seans__label {
+            width: min-content;
+            white-space: nowrap;
+          }
+        }
+      }
 
       &:first-child {
         .seans__label,
