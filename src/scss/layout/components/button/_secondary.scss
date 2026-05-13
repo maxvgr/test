@@ -1,8 +1,12 @@
 .button-secondary {
-  border: 2px solid $palette_dark;
+  width: 113px;
+  height: 35px;
+  padding: 0;
+  border: 1px solid $palette_blue;
+  color: $color-text__blue;
 
   &:hover {
-    background-color: $color-text_dark;
+    background-color: $palette_blue;
     color: $color-text__white;
   }
 }

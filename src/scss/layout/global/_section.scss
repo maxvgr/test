@@ -4,11 +4,14 @@
 
 .section {
   &__header {
-
   }
 
   &__title {
-    font-size: 36px;
+    @include mq($until: tablet) {
+      font-size: 36px;
+    }
+
+    font-size: 54px;
     font-family: $font-title;
     text-transform: uppercase;
 
@@ -16,6 +19,5 @@
       color: $color-text__red;
       font-weight: 700;
     }
-
   }
 }

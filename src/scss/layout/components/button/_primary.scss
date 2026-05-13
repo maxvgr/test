@@ -6,4 +6,15 @@
     background-color: $palette-yellow;
     color: $color-text__primary;
   }
+
+  &--transparent {
+    border: 2px solid $palette_dark;
+    background-color: transparent;
+    color: $color-text__primary;
+
+    &:hover {
+      background-color: $color-text_dark;
+      color: $color-text__white;
+    }
+  }
 }
